@@ -20,11 +20,6 @@
     xpath: "{{ xpath }}"
     value: "{{ opnsense_theme_name }}"
 
-- name: Install Theme Packages
-  community.general.pkgng:
-    name: "{{ opnsense_theme_package }}"
-    state: present
-
 - name: Get config file stats
   delegate_to: localhost
   ansible.builtin.stat:
