@@ -14,7 +14,6 @@ Role Variables
 |        Variable        |  Type  |                          Description                           |
 | :--------------------: | :----: | :------------------------------------------------------------: |
 |  opnsense_theme_name   | string | The name of the theme as it would have been set in the web UI. |
-| opnsense_theme_package | string |           The name of the theme package to install.            |
 
 Dependencies
 ------------
@@ -32,7 +31,6 @@ Example Playbook
     - role: mirceanton.opnsense_theme
       vars:
         opnsense_theme_name: cicada
-        opnsense_theme_package: os-theme-cicada
 ```
 
 License
